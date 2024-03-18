@@ -93,8 +93,11 @@ const runColorMode = (fn) => {
     }
   })
 
-
 container = document.getElementById("video_container")
 relation = document.getElementById("introduction")
 
-container.style.width = relation.style.width
+if (relation) {
+  container.style.width = relation.style.width || window.getComputedStyle(relation).width;
+} else {
+  console.error("Could not copy width from #introduction to #video_container");
+}
