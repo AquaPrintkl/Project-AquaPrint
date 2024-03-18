@@ -1,3 +1,4 @@
+console.log("fat pig")
 var tag = document.createElement('script');
 tag.src = 'https://www.youtube.com/iframe_api';
 var firstScriptTag = document.getElementsByTagName('script')[0];
@@ -83,7 +84,6 @@ const runColorMode = (fn) => {
     fn(query.matches);
   
     query.addEventListener('change', (event) => fn(event.matches));
-  }
   
   runColorMode((isDarkMode) => {
     if (isDarkMode) {
@@ -92,6 +92,8 @@ const runColorMode = (fn) => {
       document.body.classList.remove('dark-mode');
     }
   })
+}
+
 
 container = document.getElementById("video_container")
 relation = document.getElementById("introduction")
