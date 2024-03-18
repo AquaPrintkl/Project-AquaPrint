@@ -92,3 +92,9 @@ const runColorMode = (fn) => {
       document.body.classList.remove('dark-mode');
     }
   })
+
+
+container = document.getElementById("video_container")
+relation = document.getElementById("introduction")
+
+container.style.width = relation.style.width
