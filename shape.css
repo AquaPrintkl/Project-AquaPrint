@@ -1,0 +1,7 @@
+.circle {
+    border: 3px solid white;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    height: 13vw;
+    margin: 10px;
+}

@@ -1,0 +1,167 @@
+
+:root {
+    /*color var*/
+
+    --DarkPurpleText: #624BA6;
+    --LightpurpleText: #9775FA;
+    --PurpleText: #7655D4;
+    --LightBlueText: #748FFC;
+    --LightbabyblueText: #7AB8EA;
+    
+    --lightgrayblue: #C5DAEA;
+    --darkishgreen: #24777c;
+    --accentbrown: #bd816b;
+
+    --white:#f5f5fa;
+    --darkbrown:	#1e140a;
+
+
+    /*length and height*/
+    --heightmax: 75px;
+    --pageheight:768px;
+
+}
+
+body, .mainpage {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#loading {
+    z-index: 100;
+    position: absolute;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;    
+}
+
+#main_content {
+    box-sizing: border-box;
+    padding: 0;
+    display: none;
+}
+
+.navbar {
+    transition-duration: 1s;
+    z-index: 100;
+}
+.mainpage {
+    height: var(--pageheight);
+    width: 100vw;
+}
+
+.sub_mainpage {
+    height: calc(var(--pageheight)/2);
+    width: 100vw;
+}
+
+#hero{
+    background-color: var(--purple1);
+}
+
+.title {
+    font-size:var(--heightmax);
+    font-weight: bold;
+    background: url(image/stacked-waves-haikei.png);
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: AnimationLinearRevolution 5s infinite alternate;
+    font-family: "Raleway Black Italic";
+}
+
+.maincontext {
+    color: var(--LightbabyblueText);
+}
+
+.leftcontainer,.rightcontainer {
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.context-box-regular {
+    border: 1px solid var(--accentbrown);
+    color: white;
+    flex: 1;
+    min-height: min-content;
+    min-width: fit-content;
+    margin: 5px;
+    padding: 20px;
+}
+
+
+
+.raleway{
+    font-family: "Raleway Black Italic";
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: black;
+}
+
+@font-face {
+    font-family: "Raleway Black Italic";
+    src: url("https://db.onlinewebfonts.com/t/1ec88bc52d1686c5192b34435fff8ea1.eot");
+    src: url("https://db.onlinewebfonts.com/t/1ec88bc52d1686c5192b34435fff8ea1.eot?#iefix") format("embedded-opentype"),
+         url("https://db.onlinewebfonts.com/t/1ec88bc52d1686c5192b34435fff8ea1.woff2") format("woff2"),
+         url("https://db.onlinewebfonts.com/t/1ec88bc52d1686c5192b34435fff8ea1.woff") format("woff"),
+         url("https://db.onlinewebfonts.com/t/1ec88bc52d1686c5192b34435fff8ea1.ttf") format("truetype"),
+         url("https://db.onlinewebfonts.com/t/1ec88bc52d1686c5192b34435fff8ea1.svg#Raleway Black Italic") format("svg");
+}
+#skill_development {
+    background-color: var(--lightpurple);
+    z-index: 10;
+}
+
+.profile:hover > p{
+    height: 200px!important;
+    width: 275px!important;
+}
+
+.profile {
+    transition: 1s;
+}
+
+.profile > p{
+    transition: 1s;
+}
+
+.profile-pic {
+    height: calc(var(--pageheight)/5)!important;
+}
+
+
+@media (max-width: 600px) {
+    p {
+        font-size: 15px;
+    }
+
+    h6 {
+        font-size: 10px;
+    }
+
+    h5 {
+        font-size: 15px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 25px;
+    }
+
+    #interest_and_gallary {
+        display: none;
+    }
+}
+
