@@ -101,3 +101,4 @@ if (relation) {
 } else {
   console.error("Could not copy width from #introduction to #video_container");
 }
+console.log(container, relation)
